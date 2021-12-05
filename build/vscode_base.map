@@ -43,10 +43,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/main.o
  .data          0x0000000000000000        0x0 build/main.o
  .bss           0x0000000000000000        0x0 build/main.o
- .text.Error_Handler
-                0x0000000000000000        0x4 build/main.o
- .text.SystemClock_Config
-                0x0000000000000000       0x66 build/main.o
  .text          0x0000000000000000        0x0 build/stm32l4xx_hal_msp.o
  .data          0x0000000000000000        0x0 build/stm32l4xx_hal_msp.o
  .bss           0x0000000000000000        0x0 build/stm32l4xx_hal_msp.o
@@ -1376,62 +1372,62 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m
 LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x0000000000000000     0x1ccd
- .debug_info    0x0000000000000000      0x7d0 build/main.o
- .debug_info    0x00000000000007d0      0x158 build/stm32l4xx_it.o
- .debug_info    0x0000000000000928      0x678 build/system_stm32l4xx.o
- .debug_info    0x0000000000000fa0      0xd0b build/stm32l4xx_hal.o
- .debug_info    0x0000000000001cab       0x22 build/startup_stm32l476xx.o
+.debug_info     0x0000000000000000     0x1998
+ .debug_info    0x0000000000000000      0x49b build/main.o
+ .debug_info    0x000000000000049b      0x158 build/stm32l4xx_it.o
+ .debug_info    0x00000000000005f3      0x678 build/system_stm32l4xx.o
+ .debug_info    0x0000000000000c6b      0xd0b build/stm32l4xx_hal.o
+ .debug_info    0x0000000000001976       0x22 build/startup_stm32l476xx.o
 
-.debug_abbrev   0x0000000000000000      0x674
- .debug_abbrev  0x0000000000000000      0x243 build/main.o
- .debug_abbrev  0x0000000000000243       0x80 build/stm32l4xx_it.o
- .debug_abbrev  0x00000000000002c3      0x11b build/system_stm32l4xx.o
- .debug_abbrev  0x00000000000003de      0x284 build/stm32l4xx_hal.o
- .debug_abbrev  0x0000000000000662       0x12 build/startup_stm32l476xx.o
+.debug_abbrev   0x0000000000000000      0x56f
+ .debug_abbrev  0x0000000000000000      0x13e build/main.o
+ .debug_abbrev  0x000000000000013e       0x80 build/stm32l4xx_it.o
+ .debug_abbrev  0x00000000000001be      0x11b build/system_stm32l4xx.o
+ .debug_abbrev  0x00000000000002d9      0x284 build/stm32l4xx_hal.o
+ .debug_abbrev  0x000000000000055d       0x12 build/startup_stm32l476xx.o
 
-.debug_loc      0x0000000000000000      0x4ab
- .debug_loc     0x0000000000000000       0xb5 build/main.o
- .debug_loc     0x00000000000000b5       0x20 build/stm32l4xx_it.o
- .debug_loc     0x00000000000000d5      0x127 build/system_stm32l4xx.o
- .debug_loc     0x00000000000001fc      0x2af build/stm32l4xx_hal.o
+.debug_loc      0x0000000000000000      0x465
+ .debug_loc     0x0000000000000000       0x6f build/main.o
+ .debug_loc     0x000000000000006f       0x20 build/stm32l4xx_it.o
+ .debug_loc     0x000000000000008f      0x127 build/system_stm32l4xx.o
+ .debug_loc     0x00000000000001b6      0x2af build/stm32l4xx_hal.o
 
-.debug_aranges  0x0000000000000000      0x220
+.debug_aranges  0x0000000000000000      0x210
  .debug_aranges
-                0x0000000000000000       0x40 build/main.o
+                0x0000000000000000       0x30 build/main.o
  .debug_aranges
-                0x0000000000000040       0x60 build/stm32l4xx_it.o
+                0x0000000000000030       0x60 build/stm32l4xx_it.o
  .debug_aranges
-                0x00000000000000a0       0x28 build/system_stm32l4xx.o
+                0x0000000000000090       0x28 build/system_stm32l4xx.o
  .debug_aranges
-                0x00000000000000c8      0x130 build/stm32l4xx_hal.o
+                0x00000000000000b8      0x130 build/stm32l4xx_hal.o
  .debug_aranges
-                0x00000000000001f8       0x28 build/startup_stm32l476xx.o
+                0x00000000000001e8       0x28 build/startup_stm32l476xx.o
 
-.debug_ranges   0x0000000000000000      0x1d8
- .debug_ranges  0x0000000000000000       0x30 build/main.o
- .debug_ranges  0x0000000000000030       0x50 build/stm32l4xx_it.o
- .debug_ranges  0x0000000000000080       0x18 build/system_stm32l4xx.o
- .debug_ranges  0x0000000000000098      0x120 build/stm32l4xx_hal.o
- .debug_ranges  0x00000000000001b8       0x20 build/startup_stm32l476xx.o
+.debug_ranges   0x0000000000000000      0x1c8
+ .debug_ranges  0x0000000000000000       0x20 build/main.o
+ .debug_ranges  0x0000000000000020       0x50 build/stm32l4xx_it.o
+ .debug_ranges  0x0000000000000070       0x18 build/system_stm32l4xx.o
+ .debug_ranges  0x0000000000000088      0x120 build/stm32l4xx_hal.o
+ .debug_ranges  0x00000000000001a8       0x20 build/startup_stm32l476xx.o
 
-.debug_line     0x0000000000000000      0xdbb
- .debug_line    0x0000000000000000      0x333 build/main.o
- .debug_line    0x0000000000000333      0x177 build/stm32l4xx_it.o
- .debug_line    0x00000000000004aa      0x266 build/system_stm32l4xx.o
- .debug_line    0x0000000000000710      0x636 build/stm32l4xx_hal.o
- .debug_line    0x0000000000000d46       0x75 build/startup_stm32l476xx.o
+.debug_line     0x0000000000000000      0xc3d
+ .debug_line    0x0000000000000000      0x1b5 build/main.o
+ .debug_line    0x00000000000001b5      0x177 build/stm32l4xx_it.o
+ .debug_line    0x000000000000032c      0x266 build/system_stm32l4xx.o
+ .debug_line    0x0000000000000592      0x636 build/stm32l4xx_hal.o
+ .debug_line    0x0000000000000bc8       0x75 build/startup_stm32l476xx.o
 
-.debug_str      0x0000000000000000     0x1045
- .debug_str     0x0000000000000000      0x4d3 build/main.o
-                                        0x525 (size before relaxing)
- .debug_str     0x00000000000004d3       0xb4 build/stm32l4xx_it.o
+.debug_str      0x0000000000000000      0xe85
+ .debug_str     0x0000000000000000      0x2cc build/main.o
+                                        0x317 (size before relaxing)
+ .debug_str     0x00000000000002cc       0xb4 build/stm32l4xx_it.o
                                         0x1f7 (size before relaxing)
- .debug_str     0x0000000000000587       0xf9 build/system_stm32l4xx.o
+ .debug_str     0x0000000000000380       0xf9 build/system_stm32l4xx.o
                                         0x3a1 (size before relaxing)
- .debug_str     0x0000000000000680      0x9a3 build/stm32l4xx_hal.o
+ .debug_str     0x0000000000000479      0x9ea build/stm32l4xx_hal.o
                                         0xcc0 (size before relaxing)
- .debug_str     0x0000000000001023       0x22 build/startup_stm32l476xx.o
+ .debug_str     0x0000000000000e63       0x22 build/startup_stm32l476xx.o
                                          0x43 (size before relaxing)
 
 .comment        0x0000000000000000       0x1e
@@ -1441,17 +1437,17 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7e-m+fp/hard/libgcc.a
  .comment       0x000000000000001e       0x1f build/system_stm32l4xx.o
  .comment       0x000000000000001e       0x1f build/stm32l4xx_hal.o
 
-.debug_frame    0x0000000000000000      0x598
- .debug_frame   0x0000000000000000       0x80 build/main.o
- .debug_frame   0x0000000000000080       0xa8 build/stm32l4xx_it.o
- .debug_frame   0x0000000000000128       0x30 build/system_stm32l4xx.o
- .debug_frame   0x0000000000000158      0x274 build/stm32l4xx_hal.o
- .debug_frame   0x00000000000003cc       0x20 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
- .debug_frame   0x00000000000003ec       0x34 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
- .debug_frame   0x0000000000000420       0x2c /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
- .debug_frame   0x000000000000044c       0x34 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
- .debug_frame   0x0000000000000480       0x68 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
- .debug_frame   0x00000000000004e8       0xb0 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
+.debug_frame    0x0000000000000000      0x568
+ .debug_frame   0x0000000000000000       0x50 build/main.o
+ .debug_frame   0x0000000000000050       0xa8 build/stm32l4xx_it.o
+ .debug_frame   0x00000000000000f8       0x30 build/system_stm32l4xx.o
+ .debug_frame   0x0000000000000128      0x274 build/stm32l4xx_hal.o
+ .debug_frame   0x000000000000039c       0x20 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-atexit.o)
+ .debug_frame   0x00000000000003bc       0x34 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-fini.o)
+ .debug_frame   0x00000000000003f0       0x2c /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-init.o)
+ .debug_frame   0x000000000000041c       0x34 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__atexit.o)
+ .debug_frame   0x0000000000000450       0x68 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-__call_atexit.o)
+ .debug_frame   0x00000000000004b8       0xb0 /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-lock.o)
 
 Cross Reference Table
 
@@ -1495,7 +1491,6 @@ EXTI2_IRQHandler                                  build/startup_stm32l476xx.o
 EXTI3_IRQHandler                                  build/startup_stm32l476xx.o
 EXTI4_IRQHandler                                  build/startup_stm32l476xx.o
 EXTI9_5_IRQHandler                                build/startup_stm32l476xx.o
-Error_Handler                                     build/main.o
 FLASH_FlushCaches                                 build/stm32l4xx_hal_flash_ex.o
                                                   build/stm32l4xx_hal_flash.o
 FLASH_IRQHandler                                  build/startup_stm32l476xx.o
@@ -1659,7 +1654,6 @@ HAL_NVIC_SetPriorityGrouping                      build/stm32l4xx_hal_cortex.o
 HAL_NVIC_SystemReset                              build/stm32l4xx_hal_cortex.o
 HAL_PWREx_ConfigPVM                               build/stm32l4xx_hal_pwr_ex.o
 HAL_PWREx_ControlVoltageScaling                   build/stm32l4xx_hal_pwr_ex.o
-                                                  build/main.o
 HAL_PWREx_DisableBatteryCharging                  build/stm32l4xx_hal_pwr_ex.o
 HAL_PWREx_DisableGPIOPullDown                     build/stm32l4xx_hal_pwr_ex.o
 HAL_PWREx_DisableGPIOPullUp                       build/stm32l4xx_hal_pwr_ex.o
@@ -1741,7 +1735,6 @@ HAL_RCCEx_StandbyMSIRangeConfig                   build/stm32l4xx_hal_rcc_ex.o
 HAL_RCCEx_WakeUpStopCLKConfig                     build/stm32l4xx_hal_rcc_ex.o
 HAL_RCC_CSSCallback                               build/stm32l4xx_hal_rcc.o
 HAL_RCC_ClockConfig                               build/stm32l4xx_hal_rcc.o
-                                                  build/main.o
 HAL_RCC_DeInit                                    build/stm32l4xx_hal_rcc.o
 HAL_RCC_EnableCSS                                 build/stm32l4xx_hal_rcc.o
 HAL_RCC_GetClockConfig                            build/stm32l4xx_hal_rcc.o
@@ -1756,7 +1749,6 @@ HAL_RCC_GetSysClockFreq                           build/stm32l4xx_hal_rcc.o
 HAL_RCC_MCOConfig                                 build/stm32l4xx_hal_rcc.o
 HAL_RCC_NMI_IRQHandler                            build/stm32l4xx_hal_rcc.o
 HAL_RCC_OscConfig                                 build/stm32l4xx_hal_rcc.o
-                                                  build/main.o
 HAL_ResumeTick                                    build/stm32l4xx_hal.o
 HAL_SYSCFG_DisableIOAnalogSwitchBooster           build/stm32l4xx_hal.o
 HAL_SYSCFG_DisableMemorySwappingBank              build/stm32l4xx_hal.o
@@ -1809,7 +1801,6 @@ SPI3_IRQHandler                                   build/startup_stm32l476xx.o
 SVC_Handler                                       build/stm32l4xx_it.o
 SWPMI1_IRQHandler                                 build/startup_stm32l476xx.o
 SysTick_Handler                                   build/stm32l4xx_it.o
-SystemClock_Config                                build/main.o
 SystemCoreClock                                   build/system_stm32l4xx.o
                                                   build/stm32l4xx_hal_rcc.o
                                                   build/stm32l4xx_hal_pwr_ex.o
@@ -1921,7 +1912,6 @@ main                                              build/main.o
                                                   build/startup_stm32l476xx.o
                                                   /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 memset                                            /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc.a(lib_a-memset.o)
-                                                  build/main.o
                                                   /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 pFlash                                            build/stm32l4xx_hal_flash.o
                                                   build/stm32l4xx_hal_flash_ex.o

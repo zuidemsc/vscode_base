@@ -10,11 +10,11 @@ int main(void)
     i ++;
     if(!(GPIOC->IDR & 1<<13))          //Light blinks when button 1 pressed (C13)
     {
-      GPIOA->ODR ^= 1<<5;      //Toggle bit A5.
+      GPIOA->ODR ^= 1<<5;             //Toggle bit A5.
       delayms(i);
     }
-    if(i>100)
-    {
+    if(i>100)  //test
+    {  //test
       i = 1;
     }
   }
