@@ -13,6 +13,11 @@ int main(void)
       GPIOA->ODR ^= 1<<5;             //Toggle bit A5.
       delayms(i);
     }
+
+
+    // Test to show code for Lab 2
+
+    
     if(i>100)  //test
     {  //test
       i = 1;
