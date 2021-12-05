@@ -1,4 +1,6 @@
 #include "main.h"
+#include "stm32l476xx.h"
+
 void GPIO_Init(void);
 void delayms(uint16_t ms);
 int main(void)

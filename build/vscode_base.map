@@ -1372,19 +1372,19 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m
 LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x0000000000000000     0x1998
- .debug_info    0x0000000000000000      0x49b build/main.o
- .debug_info    0x000000000000049b      0x158 build/stm32l4xx_it.o
- .debug_info    0x00000000000005f3      0x678 build/system_stm32l4xx.o
- .debug_info    0x0000000000000c6b      0xd0b build/stm32l4xx_hal.o
- .debug_info    0x0000000000001976       0x22 build/startup_stm32l476xx.o
+.debug_info     0x0000000000000000     0x19af
+ .debug_info    0x0000000000000000      0x4b2 build/main.o
+ .debug_info    0x00000000000004b2      0x158 build/stm32l4xx_it.o
+ .debug_info    0x000000000000060a      0x678 build/system_stm32l4xx.o
+ .debug_info    0x0000000000000c82      0xd0b build/stm32l4xx_hal.o
+ .debug_info    0x000000000000198d       0x22 build/startup_stm32l476xx.o
 
-.debug_abbrev   0x0000000000000000      0x56f
- .debug_abbrev  0x0000000000000000      0x13e build/main.o
- .debug_abbrev  0x000000000000013e       0x80 build/stm32l4xx_it.o
- .debug_abbrev  0x00000000000001be      0x11b build/system_stm32l4xx.o
- .debug_abbrev  0x00000000000002d9      0x284 build/stm32l4xx_hal.o
- .debug_abbrev  0x000000000000055d       0x12 build/startup_stm32l476xx.o
+.debug_abbrev   0x0000000000000000      0x589
+ .debug_abbrev  0x0000000000000000      0x158 build/main.o
+ .debug_abbrev  0x0000000000000158       0x80 build/stm32l4xx_it.o
+ .debug_abbrev  0x00000000000001d8      0x11b build/system_stm32l4xx.o
+ .debug_abbrev  0x00000000000002f3      0x284 build/stm32l4xx_hal.o
+ .debug_abbrev  0x0000000000000577       0x12 build/startup_stm32l476xx.o
 
 .debug_loc      0x0000000000000000      0x465
  .debug_loc     0x0000000000000000       0x6f build/main.o
@@ -1411,23 +1411,23 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7e-m+fp/hard/libgcc.a
  .debug_ranges  0x0000000000000088      0x120 build/stm32l4xx_hal.o
  .debug_ranges  0x00000000000001a8       0x20 build/startup_stm32l476xx.o
 
-.debug_line     0x0000000000000000      0xc3d
- .debug_line    0x0000000000000000      0x1b5 build/main.o
- .debug_line    0x00000000000001b5      0x177 build/stm32l4xx_it.o
- .debug_line    0x000000000000032c      0x266 build/system_stm32l4xx.o
- .debug_line    0x0000000000000592      0x636 build/stm32l4xx_hal.o
- .debug_line    0x0000000000000bc8       0x75 build/startup_stm32l476xx.o
+.debug_line     0x0000000000000000      0xc3f
+ .debug_line    0x0000000000000000      0x1b7 build/main.o
+ .debug_line    0x00000000000001b7      0x177 build/stm32l4xx_it.o
+ .debug_line    0x000000000000032e      0x266 build/system_stm32l4xx.o
+ .debug_line    0x0000000000000594      0x636 build/stm32l4xx_hal.o
+ .debug_line    0x0000000000000bca       0x75 build/startup_stm32l476xx.o
 
-.debug_str      0x0000000000000000      0xe85
- .debug_str     0x0000000000000000      0x2cc build/main.o
-                                        0x317 (size before relaxing)
- .debug_str     0x00000000000002cc       0xb4 build/stm32l4xx_it.o
+.debug_str      0x0000000000000000      0xe8a
+ .debug_str     0x0000000000000000      0x2d1 build/main.o
+                                        0x31c (size before relaxing)
+ .debug_str     0x00000000000002d1       0xb4 build/stm32l4xx_it.o
                                         0x1f7 (size before relaxing)
- .debug_str     0x0000000000000380       0xf9 build/system_stm32l4xx.o
+ .debug_str     0x0000000000000385       0xf9 build/system_stm32l4xx.o
                                         0x3a1 (size before relaxing)
- .debug_str     0x0000000000000479      0x9ea build/stm32l4xx_hal.o
+ .debug_str     0x000000000000047e      0x9ea build/stm32l4xx_hal.o
                                         0xcc0 (size before relaxing)
- .debug_str     0x0000000000000e63       0x22 build/startup_stm32l476xx.o
+ .debug_str     0x0000000000000e68       0x22 build/startup_stm32l476xx.o
                                          0x43 (size before relaxing)
 
 .comment        0x0000000000000000       0x1e
