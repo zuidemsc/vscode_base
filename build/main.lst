@@ -1,4 +1,4 @@
-ARM GAS  /tmp/ccWbdAYT.s 			page 1
+ARM GAS  /tmp/ccyxgOCX.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -43,8 +43,8 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
   13:Core/Src/main.c ****       GPIOA->ODR ^= 1<<5;             //Toggle bit A5.
   14:Core/Src/main.c ****       delayms(i);
   15:Core/Src/main.c ****     }
-  16:Core/Src/main.c ****     if(i>100)
-  17:Core/Src/main.c ****     {
+  16:Core/Src/main.c ****     if(i>100)  //test
+  17:Core/Src/main.c ****     {  //test
   18:Core/Src/main.c ****       i = 1;
   19:Core/Src/main.c ****     }
   20:Core/Src/main.c ****   }
@@ -58,7 +58,7 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   33              		@ link register save eliminated.
   25:Core/Src/main.c ****   RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
-ARM GAS  /tmp/ccWbdAYT.s 			page 2
+ARM GAS  /tmp/ccyxgOCX.s 			page 2
 
 
   34              		.loc 1 25 3 view .LVU1
@@ -118,7 +118,7 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
   76              		.loc 1 37 3 is_stmt 1 view .LVU17
   77              		.loc 1 37 16 is_stmt 0 view .LVU18
   78 0046 DA68     		ldr	r2, [r3, #12]
-ARM GAS  /tmp/ccWbdAYT.s 			page 3
+ARM GAS  /tmp/ccyxgOCX.s 			page 3
 
 
   79 0048 22F44062 		bic	r2, r2, #3072
@@ -178,7 +178,7 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
   44:Core/Src/main.c **** }...
  129              		.loc 1 44 1 view .LVU30
  130 0018 02B0     		add	sp, sp, #8
-ARM GAS  /tmp/ccWbdAYT.s 			page 4
+ARM GAS  /tmp/ccyxgOCX.s 			page 4
 
 
  131              	.LCFI1:
@@ -238,16 +238,16 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
  177 000e 094B     		ldr	r3, .L15
  178 0010 1B69     		ldr	r3, [r3, #16]
   11:Core/Src/main.c ****     if(!(GPIOC->IDR & 1<<13))          //Light blinks when button 1 pressed (C13)
-ARM GAS  /tmp/ccWbdAYT.s 			page 5
+ARM GAS  /tmp/ccyxgOCX.s 			page 5
 
 
  179              		.loc 1 11 7 view .LVU41
  180 0012 13F4005F 		tst	r3, #8192
  181 0016 02D0     		beq	.L14
  182              	.L9:
-  16:Core/Src/main.c ****     if(i>100)
+  16:Core/Src/main.c ****     if(i>100)  //test
  183              		.loc 1 16 5 is_stmt 1 view .LVU42
-  16:Core/Src/main.c ****     if(i>100)
+  16:Core/Src/main.c ****     if(i>100)  //test
  184              		.loc 1 16 7 is_stmt 0 view .LVU43
  185 0018 642C     		cmp	r4, #100
  186 001a F6DC     		bgt	.L12
@@ -278,18 +278,18 @@ ARM GAS  /tmp/ccWbdAYT.s 			page 1
  209              		.file 2 "/usr/arm-none-eabi/include/machine/_default_types.h"
  210              		.file 3 "/usr/arm-none-eabi/include/sys/_stdint.h"
  211              		.file 4 "Drivers/CMSIS/Device/ST/STM32L4xx/Include/stm32l476xx.h"
-ARM GAS  /tmp/ccWbdAYT.s 			page 6
+ARM GAS  /tmp/ccyxgOCX.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:0000000000000000 main.c
-     /tmp/ccWbdAYT.s:18     .text.GPIO_Init:0000000000000000 $t
-     /tmp/ccWbdAYT.s:26     .text.GPIO_Init:0000000000000000 GPIO_Init
-     /tmp/ccWbdAYT.s:86     .text.GPIO_Init:0000000000000050 $d
-     /tmp/ccWbdAYT.s:92     .text.delayms:0000000000000000 $t
-     /tmp/ccWbdAYT.s:99     .text.delayms:0000000000000000 delayms
-     /tmp/ccWbdAYT.s:139    .text.main:0000000000000000 $t
-     /tmp/ccWbdAYT.s:146    .text.main:0000000000000000 main
-     /tmp/ccWbdAYT.s:203    .text.main:0000000000000034 $d
+     /tmp/ccyxgOCX.s:18     .text.GPIO_Init:0000000000000000 $t
+     /tmp/ccyxgOCX.s:26     .text.GPIO_Init:0000000000000000 GPIO_Init
+     /tmp/ccyxgOCX.s:86     .text.GPIO_Init:0000000000000050 $d
+     /tmp/ccyxgOCX.s:92     .text.delayms:0000000000000000 $t
+     /tmp/ccyxgOCX.s:99     .text.delayms:0000000000000000 delayms
+     /tmp/ccyxgOCX.s:139    .text.main:0000000000000000 $t
+     /tmp/ccyxgOCX.s:146    .text.main:0000000000000000 main
+     /tmp/ccyxgOCX.s:203    .text.main:0000000000000034 $d
 
 NO UNDEFINED SYMBOLS
