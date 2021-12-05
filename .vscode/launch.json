@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "showDevDebugOutput": true,
+            "cwd": "${workspaceRoot}",
+            "executable": "./build/vscode_base.elf",
+            "name": "Debug STM32",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "preLaunchTask": "Build STM",
+            "device": "stlink",
+            "configFiles": [
+                "openocd.cfg"
+            ],
+            "svdFile": "${workspaceRoot}/STM32L4x6.svd"
+        }
+    ]
+}
