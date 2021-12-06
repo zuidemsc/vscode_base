@@ -1,8 +1,12 @@
 #include "main.h"
 #include "stm32l476xx.h"
+#include <stdio.h>
 
 void GPIO_Init(void);
 void delayms(uint16_t ms);
+
+char print_out[100];
+
 int main(void)
 {
   GPIO_Init();
@@ -13,7 +17,10 @@ int main(void)
     if(!(GPIOC->IDR & 1<<13))          //Light blinks when button 1 pressed (C13)
     {
       GPIOA->ODR ^= 1<<5;             //Toggle bit A5.
+      delayms(30);
+      while(!(GPIOC->IDR & 1<<13));
       delayms(i);
+      sprintf(print_out,"Hello World\n");
     }
     if(i>100)  //test
     {  //test
