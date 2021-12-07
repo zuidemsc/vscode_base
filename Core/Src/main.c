@@ -1,6 +1,20 @@
-// Base Code for using STM32L476xx in VSCode
-// Include LaTeX report as well.
-
+/*----------------------------------------------------------------
+ * Description:  This is an example program that demos how to run
+ * STM32 C programs in VSCode.  It will observe a button on PC13
+ * and will toggle the LED connected to A5 when it is pressed.
+ *----------------------------------------------------------------
+ * Created by:  Scott Zuidema
+ *----------------------------------------------------------------
+ * Date Created: 12/5/2021
+ * Date Updated: 12/7/2021
+ *----------------------------------------------------------------
+ * Revision history:
+ * 0.1 - 12/5/2021 - First attempt at VSCode (worked)
+ * 0.2 - 12/7/2021 - Added this header block for comments
+ *----------------------------------------------------------------
+ * Referenced code from Dr. Karl Brakora from given example
+ * from 11/3/2021.
+ *--------------------------------------------------------------*/
 #include "main.h"
 #include "stm32l476xx.h"
 #include <stdio.h>
@@ -32,6 +46,27 @@ int main(void)
   }
 }
 
+/*----------------------------------------------------------------
+ * void GPIO_Init(void)
+ *----------------------------------------------------------------
+ * Description :  This function will set PC13 up as a button input
+ * without a pull up or pull down resistor.  It will also setup
+ * A5 as an LED output.
+ *----------------------------------------------------------------
+ * Inputs: None
+ *----------------------------------------------------------------
+ * Outputs: None
+ *----------------------------------------------------------------
+ * Created by:  Scott Zuidema
+ *----------------------------------------------------------------
+ * Date Created: 12/5/2021
+ *----------------------------------------------------------------
+ * Revision history:
+ * 0.1 - 12/5/2021 - First attempt at function (worked)
+ *----------------------------------------------------------------
+ * Referenced code from Dr. Karl Brakora from given example
+ * from 11/3/2021.
+ *--------------------------------------------------------------*/
 void GPIO_Init(void)
 {
   RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;
@@ -49,6 +84,28 @@ void GPIO_Init(void)
   GPIOA->PUPDR &= ~(3<<(5*2));                   //PA5 set to no pull-up or down 
 }
 
+/*----------------------------------------------------------------
+ * void delayms(uint16_t ms)
+ *----------------------------------------------------------------
+ * Description :  This function will attempt to delay for an
+ * approximate number of milliseconds based on the provided input
+ * value.
+ *----------------------------------------------------------------
+ * Inputs: uint16_t ms - time in milliseconds that is desired
+ * to be delayed for.
+ *----------------------------------------------------------------
+ * Outputs: None
+ *----------------------------------------------------------------
+ * Created by:  Scott Zuidema
+ *----------------------------------------------------------------
+ * Date Created: 12/5/2021
+ *----------------------------------------------------------------
+ * Revision history:
+ * 0.1 - 12/5/2021 - First attempt at function (worked)
+ *----------------------------------------------------------------
+ * Referenced code from Dr. Karl Brakora from given example
+ * from 11/3/2021.
+ *--------------------------------------------------------------*/
 void delayms(uint16_t ms) //close to milliseconds
 {
   volatile uint32_t time = 0;
