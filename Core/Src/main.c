@@ -1,3 +1,6 @@
+// Base Code for using STM32L476xx in VSCode
+// Include LaTeX report as well.
+
 #include "main.h"
 #include "stm32l476xx.h"
 #include <stdio.h>

@@ -1,0 +1,150 @@
+\documentclass[letter,abstract=true,titlepage]{scrartcl}
+
+\usepackage[USenglish]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[ansinew]{inputenc}
+\usepackage{lmodern}
+
+\usepackage{setspace}
+\onehalfspacing
+\AfterTOCHead{\singlespacing}
+\KOMAoptions{DIV=last}
+\usepackage{geometry}
+\geometry{letterpaper, portrait, margin=1in}
+\usepackage[utf8]{inputenc}
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Code}
+\usepackage{xcolor}
+%\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{graphicx}
+%opening
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+\usepackage{xpatch}
+\usepackage{lipsum}
+\usepackage{indentfirst}
+
+\usepackage{lmodern}
+
+% (2) specify encoding
+\usepackage[T1]{fontenc}
+
+% (3) load symbol definitions
+\usepackage{textcomp}
+%\usepackage{underscore}
+
+\usepackage{placeins}
+
+\let\Oldsection\section
+\renewcommand{\section}{\FloatBarrier\Oldsection}
+
+\let\Oldsubsection\subsection
+\renewcommand{\subsection}{\FloatBarrier\Oldsubsection}
+
+\let\Oldsubsubsection\subsubsection
+\renewcommand{\subsubsection}{\FloatBarrier\Oldsubsubsection}
+
+\makeatletter
+\xpatchcmd{\@addmargin}
+{\setlength{\itemindent}{\z@}%
+}
+{\ifx\@afterindentfalse\@afterindenttrue
+    \setlength{\itemindent}{\parindent}%
+    \else
+    \setlength{\itemindent}{\z@}%
+    \fi}
+{\typeout{Success patching}}{\typeout{Error patching}}
+\makeatother
+
+%\pagestyle{fancy}
+%\fancyhf{}
+%\rhead{EGR 680, Project \#1}
+%\lhead{Scott Zuidema}
+%\rfoot{Page \thepage}
+
+\definecolor{mGreen}{rgb}{0,0.1,0}
+\definecolor{mGray}{rgb}{0,0.2,0}
+\definecolor{mPurple}{rgb}{0,0.3,0}
+\definecolor{backgroundColour}{rgb}{0.95,0.95,0.95}
+
+\lstdefinestyle{CStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{mPurple},
+    numberstyle=\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+\lstdefinestyle{CStyle-tiny}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{mPurple},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\tiny,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=C
+}
+
+
+\lstdefinestyle{VerilogStyle-tiny}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{mPurple},
+    numberstyle=\tiny\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\tiny,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=Verilog
+}
+\lstdefinestyle{VerilogStyle}{
+    backgroundcolor=\color{backgroundColour},   
+    commentstyle=\color{mGreen},
+    keywordstyle=\color{mPurple},
+    numberstyle=\color{mGray},
+    stringstyle=\color{mPurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=t,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    language=Verilog
+}
