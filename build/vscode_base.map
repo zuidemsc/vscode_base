@@ -1416,12 +1416,12 @@ LOAD /usr/lib/gcc/arm-none-eabi/11.2.0/thumb/v7e-m+fp/hard/libgcc.a
  .debug_ranges  0x0000000000000088      0x120 build/stm32l4xx_hal.o
  .debug_ranges  0x00000000000001a8       0x20 build/startup_stm32l476xx.o
 
-.debug_line     0x0000000000000000      0xc83
- .debug_line    0x0000000000000000      0x1fb build/main.o
- .debug_line    0x00000000000001fb      0x177 build/stm32l4xx_it.o
- .debug_line    0x0000000000000372      0x266 build/system_stm32l4xx.o
- .debug_line    0x00000000000005d8      0x636 build/stm32l4xx_hal.o
- .debug_line    0x0000000000000c0e       0x75 build/startup_stm32l476xx.o
+.debug_line     0x0000000000000000      0xc85
+ .debug_line    0x0000000000000000      0x1fd build/main.o
+ .debug_line    0x00000000000001fd      0x177 build/stm32l4xx_it.o
+ .debug_line    0x0000000000000374      0x266 build/system_stm32l4xx.o
+ .debug_line    0x00000000000005da      0x636 build/stm32l4xx_hal.o
+ .debug_line    0x0000000000000c10       0x75 build/startup_stm32l476xx.o
 
 .debug_str      0x0000000000000000      0xe97
  .debug_str     0x0000000000000000      0x2de build/main.o
