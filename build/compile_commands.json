@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/scott/gvsu/stm/vscode_base/build",
+  "command": "/usr/bin/g++ -DGTEST_LINKED_AS_SHARED_LIBRARY=1 -I/home/scott/gvsu/stm/vscode_base/Core/Inc -I/home/scott/gvsu/stm/vscode_base/Drivers/STM32L4xx_HAL_Driver/Inc -I/home/scott/gvsu/stm/vscode_base/Drivers/CMSIS/Device/ST/STM32L4xx/Include -g -o CMakeFiles/test-all.dir/Core/Src/gtest.cpp.o -c /home/scott/gvsu/stm/vscode_base/Core/Src/gtest.cpp",
+  "file": "/home/scott/gvsu/stm/vscode_base/Core/Src/gtest.cpp"
+}
+]

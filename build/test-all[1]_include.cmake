@@ -1,0 +1,5 @@
+if(EXISTS "/home/scott/gvsu/stm/vscode_base/build/test-all[1]_tests.cmake")
+  include("/home/scott/gvsu/stm/vscode_base/build/test-all[1]_tests.cmake")
+else()
+  add_test(test-all_NOT_BUILT test-all_NOT_BUILT)
+endif()
