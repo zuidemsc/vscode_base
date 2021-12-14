@@ -1,8 +1,0 @@
-# ninja log v5
-1	112	1639403399559278892	/home/scott/gvsu/stm/vscode_base/build/test-all[1]_tests.cmake	eeb6b0dfd807c453
-1	112	1639403399559278892	test-all[1]_tests.cmake	eeb6b0dfd807c453
-1	112	1639403399559278892	test-all	eeb6b0dfd807c453
-1	1484	1639403613925464812	CMakeFiles/test-all.dir/Core/Src/gtest.cpp.o	c5ea213d78797c5d
-1	105	1639403711035214174	test-all	eeb6b0dfd807c453
-1	105	1639403711035214174	test-all[1]_tests.cmake	eeb6b0dfd807c453
-1	105	1639403711035214174	/home/scott/gvsu/stm/vscode_base/build/test-all[1]_tests.cmake	eeb6b0dfd807c453

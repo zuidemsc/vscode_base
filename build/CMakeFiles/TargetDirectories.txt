@@ -1,6 +1,0 @@
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/test-all.dir
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/package.dir
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/package_source.dir
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/test.dir
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/edit_cache.dir
-/home/scott/gvsu/stm/vscode_base/build/CMakeFiles/rebuild_cache.dir
