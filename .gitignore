@@ -1,6 +1,2 @@
-report/build/*
-report/build/**
-report/build/
-build/
-build/*
-build/**
+**/build/*
+**/build/
